@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+  background: white;
+}
+
+
+.topbar{
+  background: #2f2f2f;
+  color: #d8d6d6;
+  padding: 14px 20px;
+  font-size: 18px;
+}
+
+.title{
+  text-align: center;
+  margin: 60px 0 20px;
+  font-weight: 500;
+}
+
+.add-row{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.add-row input{
+  width: 520px;
+  height: 32px;
+  border: 1px solid #cfcfcf;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.add-row button{
+  height: 32px;
+  padding: 0 16px;
+  border: 1px solid #2a74b8;
+  background: #337ab7;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.list{
+  width: 720px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+
+
+.item{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ededed;
+  height: 55px;
+  padding: 0 12px;
+}
+
+.item:first-child{
+  border-top: none;
+}
+
+.text{
+  flex: 1;
+  margin-left: 10px;
+}
+
+
+.done{
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.del-btn{
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
