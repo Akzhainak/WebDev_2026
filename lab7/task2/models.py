@@ -11,7 +11,7 @@ class Character:
 
     def __str__(self):
         return (f"Character: {self.name}\n"
-                f"Quality: {'⭐' * self.quality}\n"
+                f"Quality: {'*' * self.quality}\n"
                 f"Element: {self.element}\n"
                 f"Weapon: {self.weapon}\n"
                 f"Region: {self.region}")

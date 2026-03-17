@@ -30,6 +30,7 @@ function addTask() {
   });
 
 
+
   delBtn.addEventListener("click", function () {
     li.remove();
   });
