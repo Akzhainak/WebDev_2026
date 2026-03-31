@@ -1,8 +1,8 @@
 class Character:
-    def __init__(self, name, quality, element, weapon, region):
+    def __init__(self, name, quality, weapon, region):
         self.name = name
         self.quality = quality
-        self.element = element
+        #self.element = element
         self.weapon = weapon
         self.region = region
 
@@ -12,13 +12,13 @@ class Character:
     def __str__(self):
         return (f"Character: {self.name}\n"
                 f"Quality: {'*' * self.quality}\n"
-                f"Element: {self.element}\n"
+                #f"Element: {self.element}\n"
                 f"Weapon: {self.weapon}\n"
                 f"Region: {self.region}")
 
 class PlayableCharacter(Character):
-    def __init__(self, name, quality, element, weapon, region, banner_type):
-        super().__init__(name, quality, element, weapon, region)
+    def __init__(self, name, quality,  weapon, region, banner_type):
+        super().__init__(name, quality,  weapon, region)
         self.banner_type = banner_type
 
     def get_action(self):
@@ -28,8 +28,8 @@ class PlayableCharacter(Character):
         return f"This character is available in the {self.banner_type} banner."
 
 class Boss(Character):
-    def __init__(self, name, element, region, drops):
-        super().__init__(name, 5, element, "Universal", region)
+    def __init__(self, name,  region, drops):
+        super().__init__(name, 5,  "Universal", region)
         self.drops = drops
 
     def get_action(self):
